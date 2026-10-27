@@ -6,7 +6,6 @@ jobs:
   permission_check:
     runs-on: ubuntu-latest
     steps:
-      # Read the modes from the head commit's tree, so fork code is never checked out under pull_request_target.
       - name: Check Permissions
         env:
           GH_TOKEN: ${{ github.token }}
